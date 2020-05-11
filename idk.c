@@ -31,7 +31,7 @@ int main()
 		printf("Memory successfully allocated using malloc.\n"); 
 
 		// Free the memory 
-		free(ptr); 
+		//free(ptr); 
 		printf("Malloc Memory successfully freed.\n"); 
 
 		// Memory has been successfully allocated 
