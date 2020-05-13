@@ -8,14 +8,14 @@ int main()
 	int n, i; 
 	n = 5; 
 	ptr = (int*)malloc(n * sizeof(int)); 
-	ptr1 = (int*)calloc(n * sizeof(int)); 
+	ptr1 = (int*)malloc(n * sizeof(int)); 
 	if (ptr == NULL || ptr1 == NULL) { 
 		printf("Memory not allocated.\n"); 
 		exit(0); 
 	} 
 	else { 
 		printf("Memory successfully allocated using malloc.\n"); 
-		//free(ptr); 
+		free(ptr); 
 		printf("Malloc Memory successfully freed.\n"); 
 		
 		printf("\nMemory successfully allocated using calloc.\n"); 
